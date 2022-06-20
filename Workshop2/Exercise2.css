@@ -1,0 +1,41 @@
+body{
+
+    font-family: 'Aldrich', sans-serif;
+    background-color:black;
+    margin: auto; width: 60%; border: 3px;
+}
+h1{
+    border:solid 6px #ff7200;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+h2{
+    color: #ff7200;
+}
+p{
+    border: dotted 5px #ff7200;
+    font-style: italic;
+    color:white;
+}
+h3{
+    border:solid 6px #ff7200;
+    background-color: black;
+    font-family:'Times New Roman', Times, serif;
+    color: white;}
+ol{
+    padding: 20px;
+    border: solid 5px white;
+    color: black;
+    background-color: #ff7200;
+}
+ul{
+    padding: 20px;
+    border: solid 5px white;
+    color: black;
+    background-color: #ff7200;
+    font-weight: bold;
+}
+a{
+    color: white;
+}
+    
