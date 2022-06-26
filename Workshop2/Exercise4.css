@@ -1,0 +1,86 @@
+* body{
+    font-family: 'Aldrich', sans-serif;
+    background-color:#F2EEE2;
+    background-color:#EFEFEF;
+    margin: auto; width: 75%; border: 3px;
+}
+.div0{
+    width:50%;
+    float :right;
+    text-align:right;
+    offset-position: right top;
+    
+}
+.div1{
+    width:50%;
+    height: 50%;
+    float :left;
+
+}
+.div2{
+    width:50%;
+    float :right;
+    text-align:right;
+    clear: right;
+    
+}
+header h1{
+
+    offset-path: path('M20,20 C20,100 200,0 200,100');
+    offset-position: left top;
+    animation: move 3000ms infinite alternate ease-in-out;
+    width: 40px;
+    height: 40px;
+
+}
+
+@keyframes move {
+0% {
+    offset-distance: 0%;
+}
+100% {
+    offset-distance: 50%;
+}
+    
+}
+.div3{
+    width:50%;
+    float :right;
+    text-align:right;
+}
+.div4{
+    width:50%;
+    float :right;
+    text-align:right;
+}
+.training{
+    color: black;
+    width:100%;
+    padding: 15px 410px 15px 5px;
+
+}
+.date{
+display:flex;
+align-items: center;
+gap:50px;
+
+}
+h3,p{
+    margin: 0px;
+}
+.footer::after{
+    content: "";
+    clear: both;
+    display: table;
+    color: white;
+    width:100%;
+    padding: 1px 400px 15px 15px;
+    text-align:right;
+}
+h1,h3{
+    color: #5AC9B8;
+    
+}
+h4{
+    position: absolute;
+}
