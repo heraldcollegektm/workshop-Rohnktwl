@@ -34,6 +34,13 @@ background: linear-gradient(180deg, #20265F 0%, rgba(41, 23, 70, 0.99) 100%);
     padding-left: 20px;
     color: white;
 }
+.search button{
+    background: #0B1539;
+    padding: 8px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+}
 .large{
     width: 100%;
     height: calc(100vh - 77px);
@@ -48,6 +55,12 @@ background: linear-gradient(180deg, #20265F 0%, rgba(41, 23, 70, 0.99) 100%);
 }
 .guilford{
     color: white;
+}
+.desc{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 .day{
     background: #101C42;
@@ -133,12 +146,32 @@ h1{
     margin-bottom:15px;
     margin-top: 15px;
 }
-.rise{
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
-    margin-top: 10px;
+
+.sun{
+    display: grid;
+    grid-template-columns:50%;
+    gap: 5px;
+    
 }
+.sunrisepic{
+    padding-left: 15px;
+}
+.rise{
+    /* margin-top: 5px; */
+    display:grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 150px;
+
+    
+}
+.set{
+    margin-top: 5px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 150px;
+    
+}
+
 .pic{
     position: relative;
 }
@@ -222,3 +255,18 @@ h6{
         }
     }
 
+.large.loading{
+    visibility: hidden;
+    position: relative;
+
+}
+.large.loading::after{
+    visibility:visible;
+    content: "Loading . . .";
+    color:white;
+    font-size:50px;
+    position: absolute;
+    margin-top:100px;
+    margin-left:35%;
+
+}
