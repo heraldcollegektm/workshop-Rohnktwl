@@ -47,8 +47,8 @@ let weather = {
         const { temp_max } =data.main;
         const { temp_min } =data.main;
 
-        const { sunrise } =data.main;
-        const { sunset } =data.main;
+        const { sunrise } =data.sys;
+        const { sunset } =data.sys;
         timezone.innerHTML = data.timezone;
         // const { timezone } =data.main;
         
@@ -62,8 +62,8 @@ let weather = {
         document.querySelector(".humidity").innerText = humidity + '%'
         document.querySelector(".max").innerText = temp_max + "°" + " | " + temp_min + "°C"
         document.querySelector(".windspeed").innerText = speed + 'km/h'
-        // document.querySelector(".risetime").innerText = window.moment(sunrise * 1000).format('HH:mm a');
-        // document.querySelector(".settime").innerText = window.moment(sunset * 1000).format('HH:mm a');
+        document.querySelector(".risetime").innerText = window.moment(sunrise * 1000).format('HH:mm a');
+        document.querySelector(".settime").innerText = window.moment(sunset * 1000).format('HH:mm a');
 
         document.querySelector(".large").classList.remove("loading")
     },
@@ -86,4 +86,4 @@ document
         }
     });
 
-    weather.fetchWeather("Guildford");
+weather.fetchWeather("Guildford");
